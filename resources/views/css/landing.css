@@ -1,0 +1,118 @@
+
+.base-layer {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.Cpp {
+    width: 10rem;
+}
+
+.Cpp:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.Python {
+    width: 10rem;
+    /*position: absolute;*/
+
+}
+
+.Python:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+.Csharp {
+    width: 10rem;
+    transition: 0.5s;
+    /*position: absolute;*/
+
+}
+
+.Csharp:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.Css {
+    width: 10rem;
+    transition: 0.5s;
+    /*position: absolute;*/
+
+}
+
+.Css:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.php, .C {
+    width: 10rem;
+    /*position: absolute;*/
+
+}
+
+.php:hover, .C:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.Cpp_text,
+.Python_text,
+.Csharp_text,
+.Css_text,
+.php_text,
+.C_text {
+
+    display: none;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.active.fadeInUp {
+
+    animation: bottomtoUP 1s ease-in-out;
+
+}
+
+@keyframes bottomtoUP {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.reveal.slide {
+    animation: slide 1s ease-in-out;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
